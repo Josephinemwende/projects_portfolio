@@ -9,7 +9,6 @@ header{
     background-position: center;
     background-size: cover;
     height: 800px;
-    position: relative;
 }
 #nav-bar{
     display: flex;
@@ -52,7 +51,24 @@ header{
 .container-1{
    text-align: center;
    border: 1px solid hsl(0, 0%, 48%);
-   padding: 10px;
+   padding: 20px;
+   border-radius: 25px;
+   position: relative;
+}
+.container-1 div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.container-1 .logo{
+    border: 2px solid black;
+    position: absolute;
+    top: -0.75px;
+}
+.container-1 img{
+    height: 150px;
+    width: 150px;
 }
 .container-1 h2{
     font-family: 'commissioner', sans-serif;
@@ -60,15 +76,34 @@ header{
     padding: 50px;
 }
 .container-1 button{
-    background-color: hsl(176, 72%, 28%);
-    height: 50px;
-    width: 50%;
-    border-radius: 50px;
+    background-color: hsl(176, 50%, 47%);
+    height: 150px;
+    width: 75%;
+    border-radius: 75px;
+    border: none;
     color: white;
+    font-size: 40px;
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 500;
+
+}
+.container-2{
+    border: 2px solid hsl(0, 0%, 48%);
+}
+.container-2 span{
+    display: block;
+}
+.container-2 .progress-bar{
+    height: 20px;
+    width: 0;
+    line-height: 20px;
 }
 .container-3{
     border: 2px solid hsl(0, 0%, 48%);
     border-radius: 25px;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
 }
 .container-3 h4{
     font-family: 'Commissioner', sans-serif;
@@ -88,52 +123,78 @@ header{
     border-radius: 25px;
 }
 .container-4 h4, span{
-    padding: 40px;
+    padding: 40px 0 0 40px;
 }
 
 .container-4 button{
-    height: 75px;
-    width: 50%;
-    border-radius: 50px;
+    height: 120px;
+    width: 55%;
+    border-radius: 75px;
     padding: 20px 0;
     background-color:hsl(176, 50%, 47%);
     color: white;
-    font-size: 16px;
+    font-size: 35px;
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 500;
     margin: 30px;
+    border: none;
+    text-align: center;
 }
 .container-5{
     border: 2px solid hsl(0, 0%, 48%);
     margin: 20px;
     border-radius: 25px;
 }
+
 .container-5 h4, span{
-    padding: 40px;
+    padding: 40px 0 0 40px;
+}
+.container-5 button{
+    height: 120px;
+    width: 55%;
+    border-radius: 75px;
+    padding: 20px 0;
+    background-color:hsl(176, 50%, 47%);
+    color: white;
+    font-size: 35px;
+    margin: 30px;
+    border: none;
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 500;
 }
 .container-6{
     border: 2px solid hsl(0, 0%, 48%);
     margin: 20px;
     border-radius: 25px;
+    opacity: 50%;
 }
-.container-6 h4, span{
-    padding: 40px;
+
+.container-6 h4 , span{
+    padding:40px 0 0 40px;
 }
-.container-5 button{
-    height: 75px;
-    width: 50%;
-    border-radius: 50px;
-    padding: 20px 0;
-    background-color:hsl(176, 50%, 47%);
-    color: white;
-    font-size: 16px;
-    margin: 30px;
-}
+
 .container-6 button{
-    height: 75px;
-    width: 50%;
-    border-radius: 50px;
+    height: 120px;
+    width: 55%;
+    border-radius: 75px;
     padding: 20px 0;
     background-color:hsl(176, 50%, 47%);
     color: white;
-    font-size: 16px;
+    font-size: 35px;
     margin: 30px;
+    background-color: hsl(0, 0%, 48%);
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 400;
+    border: none;
+}
+.container-6 #number{
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    color: hsl(0, 0%, 0%);
+}
+.container-6 .number-description{
+    color: hsl(0, 0%, 48%);
+    font-size: 16px;
+    padding: 10px;
 }
