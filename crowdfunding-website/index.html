@@ -12,7 +12,7 @@
         <header>
             <div id="nav-bar">
                 <h1>crowdfund</h1>
-                <img src="./Images/icon-hamburger.svg" alt="menu-icon"/>
+                <img onClick="handleClick()" id="menu" src="./Images/icon-hamburger.svg" alt="menu-icon"/>
             </div>
         </header>
         <div class="container">
@@ -20,18 +20,20 @@
                 <img class="logo" src="/Images/logo-mastercraft.svg" alt="logo">
                 <h2>Mastercraft Bamboo Monitor Riser</h2>
                 <p>
-                    A beautiful handcrafted monitor stand to reduce neck and eyes strain.
+                    A beautifully handcrafted monitor stand to reduce neck and eyes strain.
                 </p>
                 <div>
                     <button>Back this project</button>
-                    <img src="./Images/icon-bookmark.svg" alt="bookmark icon">
+                    <img class="bookmark-img" src="./Images/icon-bookmark.svg" alt="bookmark icon">
                 </div>
             </div>
             <div class="container-2">
-                <p>$89,914</p><span>of $100,000 backed</span>
+                <p>$89,914<span>of $100,000 backed</span></p>
+                <hr/>
                 <p>5,007<span>total backers</span></p>
+                <hr/>
                 <p>56<span>days left</span></p>
-                <p class="progress-bar"></p>
+                <p class="progress-bar"><span class="progress"></span></p>
             </div>
             <div class="container-3">
                 <h3>About this project</h3>
@@ -50,7 +52,7 @@
                     <p>You get an ergonomic stand made of natural bamboo. You've helped us launchour promotional
                         campaign, and you'll be added to a special Backer member list.
                     </p>
-                    <p>101 <sup>left</sup></p>
+                    <p class="number">101<span class="number-description">left</span></p>
                     <button>Select Reward</button>
                 </div>
                 <div class="container-5">
@@ -59,7 +61,7 @@
                     <p>You get a Black Special Edition compuer stand and a personal thank you. You'll be added to our Backer
                         member list. Shipping is included.
                     </p>
-                    <p>64 <sup>left</sup></p>
+                    <p class="number">64<span class="number-description">left</span></p>
                     <button>Select Reward</button>
                 </div>
                 <div  class="container-6">
@@ -68,10 +70,11 @@
                     <p>You get two Special Edition Mahogany stands, a Backer T-shirt, and a personal thank you. You'll be added to our Backer
                         member list. Shipping is included.
                     </p>
-                    <p id="number">0<span class="number-description">left</span></p>
+                    <p class="number">0<span class="number-description">left</span></p>
                     <button>Out of Stock</button>
                 </div>
             </div>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>

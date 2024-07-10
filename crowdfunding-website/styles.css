@@ -3,12 +3,16 @@
     padding:0;
     margin: 0;
 }
+body{
+    background-color: rgb(247, 246, 246);
+}
 header{
     background-image: url('./Images/image-hero-mobile.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 800px;
+    position: relative;
 }
 #nav-bar{
     display: flex;
@@ -31,13 +35,14 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: white;
-    border-radius: 10px;
-    margin: 0 50px;
+    margin: 50px;
+    position: absolute;
+    top: 650px;
+    gap: 50px;
 }
 .container p{
     color:  hsl(0, 0%, 48%);
-    font-size: 16px;
+    font-size: 50px;
     padding: 40px 0;
 }
 .container div{
@@ -50,9 +55,10 @@ header{
 }
 .container-1{
    text-align: center;
-   border: 1px solid hsl(0, 0%, 48%);
    padding: 20px;
    border-radius: 25px;
+   width: 100%;
+   background-color: white;
    position: relative;
 }
 .container-1 div{
@@ -62,18 +68,21 @@ header{
     justify-content: space-around;
 }
 .container-1 .logo{
-    border: 2px solid black;
     position: absolute;
-    top: -0.75px;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100px;
+    width: 100px;
 }
-.container-1 img{
+.container-1 .bookmark-img{
     height: 150px;
-    width: 150px;
 }
 .container-1 h2{
     font-family: 'commissioner', sans-serif;
     font-weight: 700;
     padding: 50px;
+    font-size: 60px;
 }
 .container-1 button{
     background-color: hsl(176, 50%, 47%);
@@ -89,33 +98,70 @@ header{
 }
 .container-2{
     border: 2px solid hsl(0, 0%, 48%);
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    border-radius: 25px;
+    border: none;
+}
+.container-2 p{
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 700;
+    color: hsl(0, 0%, 0%);
+    font-size: 60px;
 }
 .container-2 span{
     display: block;
+    color: hsl(0, 0%, 48%);
+    font-size: 40px;
+}
+.container hr{
+    width: 25%;
+    margin: 0 auto;
 }
 .container-2 .progress-bar{
-    height: 20px;
-    width: 0;
-    line-height: 20px;
+    background-color:rgb(247, 246, 246) ;
+    margin: 50px;
+    padding: 0;
+    border-radius: 25px;
+}
+.container-2 .progress{
+    width: 75%;
+    background-color: hsl(176, 50%, 47%);
+    border-radius: 25px;
 }
 .container-3{
-    border: 2px solid hsl(0, 0%, 48%);
     border-radius: 25px;
     display: grid;
     grid-template-columns: auto;
-    gap: 20px;
+    gap: 40px;
+    background-color: white;
+    margin-bottom: 200px;
 }
 .container-3 h4{
     font-family: 'Commissioner', sans-serif;
     font-weight: 700;
+    font-size: 40px;
 }
 .container-3 h3{
     padding: 40px;
     font-family: 'Commissioner', sans-serif;
     font-weight: 700;
+    font-size: 50px;
 }
 .container-3 p{
     padding: 40px;
+}
+.container-3 .number{
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 700;
+    color:hsl(0, 0%, 0%);
+    font-size: 90px;
+}
+.container-3 .number-description{
+    color:hsl(0, 0%, 48%);
+    padding: 20px;
+    margin: 0;
 }
 .container-4{
     border: 2px solid hsl(0, 0%, 48%);
@@ -124,6 +170,7 @@ header{
 }
 .container-4 h4, span{
     padding: 40px 0 0 40px;
+    font-size: 40px;
 }
 
 .container-4 button{
@@ -186,15 +233,4 @@ header{
     font-family: 'Commissioner', sans-serif;
     font-weight: 400;
     border: none;
-}
-.container-6 #number{
-    font-family: 'Commissioner', sans-serif;
-    font-weight: 700;
-    font-size: 80px;
-    color: hsl(0, 0%, 0%);
-}
-.container-6 .number-description{
-    color: hsl(0, 0%, 48%);
-    font-size: 16px;
-    padding: 10px;
 }
